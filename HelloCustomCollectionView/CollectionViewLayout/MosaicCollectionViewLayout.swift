@@ -7,6 +7,8 @@
 
 import UIKit
 
+//https://developer.apple.com/documentation/uikit/views_and_controls/collection_views/layouts/customizing_collection_view_layouts
+
 class MosaicCollectionViewLayout: UICollectionViewLayout {
 
     var cachedAttributes = [UICollectionViewLayoutAttributes]()
