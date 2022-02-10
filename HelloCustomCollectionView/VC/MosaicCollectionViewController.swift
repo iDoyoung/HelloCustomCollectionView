@@ -15,6 +15,7 @@ class MosaicCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mosaicCollectionView.dataSource = self
+        mosaicCollectionView.delegate = self
     }
 
 
@@ -37,6 +38,14 @@ extension MosaicCollectionViewController: UICollectionViewDataSource {
     
 }
 
+extension MosaicCollectionViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: SegueID.showCLVC.id, sender: self)
+    }
+}
+
 class MosaicCollectionViewCell: UICollectionViewCell {
     static let reuseIdentifier = "MosaicCollectionViewCellReuseIdentifier"
+   
 }

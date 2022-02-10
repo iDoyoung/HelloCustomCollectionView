@@ -14,6 +14,10 @@
 		7F5C23D027B0E0B000D985E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5C23CF27B0E0B000D985E6 /* Assets.xcassets */; };
 		7F5C23D327B0E0B000D985E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5C23D127B0E0B000D985E6 /* LaunchScreen.storyboard */; };
 		7F5C23DC27B0E15D00D985E6 /* MosaicCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C23DB27B0E15D00D985E6 /* MosaicCollectionViewLayout.swift */; };
+		7F5C23DE27B14A5B00D985E6 /* CircularCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C23DD27B14A5B00D985E6 /* CircularCollectionViewLayout.swift */; };
+		7F5C23E027B14ACE00D985E6 /* CircularCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C23DF27B14ACE00D985E6 /* CircularCollectionViewController.swift */; };
+		7F5C23E227B2095900D985E6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5C23E127B2095900D985E6 /* Constants.swift */; };
+		7F8C19CD27B360F100DC526C /* CompositionalLayoutCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8C19CC27B360F100DC526C /* CompositionalLayoutCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		7F5C23D227B0E0B000D985E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F5C23D427B0E0B000D985E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F5C23DB27B0E15D00D985E6 /* MosaicCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicCollectionViewLayout.swift; sourceTree = "<group>"; };
+		7F5C23DD27B14A5B00D985E6 /* CircularCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularCollectionViewLayout.swift; sourceTree = "<group>"; };
+		7F5C23DF27B14ACE00D985E6 /* CircularCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularCollectionViewController.swift; sourceTree = "<group>"; };
+		7F5C23E127B2095900D985E6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7F8C19CC27B360F100DC526C /* CompositionalLayoutCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,11 @@
 		7F5C23C527B0E0AD00D985E6 /* HelloCustomCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				7F8C19CB27B3606D00DC526C /* Util */,
+				7F8C19CA27B3605600DC526C /* VC */,
 				7F5C23DA27B0E0E400D985E6 /* CollectionViewLayout */,
 				7F5C23C627B0E0AD00D985E6 /* AppDelegate.swift */,
 				7F5C23C827B0E0AD00D985E6 /* SceneDelegate.swift */,
-				7F5C23CA27B0E0AD00D985E6 /* MosaicCollectionViewController.swift */,
 				7F5C23CC27B0E0AD00D985E6 /* Main.storyboard */,
 				7F5C23CF27B0E0B000D985E6 /* Assets.xcassets */,
 				7F5C23D127B0E0B000D985E6 /* LaunchScreen.storyboard */,
@@ -74,8 +83,27 @@
 			isa = PBXGroup;
 			children = (
 				7F5C23DB27B0E15D00D985E6 /* MosaicCollectionViewLayout.swift */,
+				7F5C23DD27B14A5B00D985E6 /* CircularCollectionViewLayout.swift */,
 			);
 			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		7F8C19CA27B3605600DC526C /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7F5C23DF27B14ACE00D985E6 /* CircularCollectionViewController.swift */,
+				7F5C23CA27B0E0AD00D985E6 /* MosaicCollectionViewController.swift */,
+				7F8C19CC27B360F100DC526C /* CompositionalLayoutCollectionViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		7F8C19CB27B3606D00DC526C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7F5C23E127B2095900D985E6 /* Constants.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +179,10 @@
 			files = (
 				7F5C23DC27B0E15D00D985E6 /* MosaicCollectionViewLayout.swift in Sources */,
 				7F5C23CB27B0E0AD00D985E6 /* MosaicCollectionViewController.swift in Sources */,
+				7F5C23DE27B14A5B00D985E6 /* CircularCollectionViewLayout.swift in Sources */,
+				7F8C19CD27B360F100DC526C /* CompositionalLayoutCollectionViewController.swift in Sources */,
+				7F5C23E027B14ACE00D985E6 /* CircularCollectionViewController.swift in Sources */,
+				7F5C23E227B2095900D985E6 /* Constants.swift in Sources */,
 				7F5C23C727B0E0AD00D985E6 /* AppDelegate.swift in Sources */,
 				7F5C23C927B0E0AD00D985E6 /* SceneDelegate.swift in Sources */,
 			);
